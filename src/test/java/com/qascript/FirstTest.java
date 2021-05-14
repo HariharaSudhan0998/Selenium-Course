@@ -15,7 +15,7 @@ public class FirstTest {
         public static void main(String[] args) {
     	
     	
-    	System.setProperty("webdriver.gecko.driver", "/home/ec2-user/geckodriver");
+    	System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
         WebDriver driver =new FirefoxDriver();  
          driver.get("htttp://flogile.com");
         // driver.get("htttp://65.2.108.33:8080");
