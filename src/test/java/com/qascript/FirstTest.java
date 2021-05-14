@@ -11,7 +11,7 @@ public class FirstTest {
 
 
     @Test
-    public void OpenBrowser()  {
+    //public void OpenBrowser()  {
         public static void main(String[] args) {
     	
     	
@@ -31,7 +31,7 @@ public class FirstTest {
         driver.get("https://www.google.com");
         System.out.println(driver.getTitle());
         Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Google")); */
-    }
+ //   }
 
 
 }
