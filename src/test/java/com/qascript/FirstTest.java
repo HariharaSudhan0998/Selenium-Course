@@ -12,10 +12,12 @@ public class FirstTest {
     @Test
     public void OpenBrowser()  {
         WebDriver driver;
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
-        ChromeOptions options = new ChromeOptions();
+       // System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
+        System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+        WebDriver driver =new FirefoxDriver();
+        //ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");
-        driver = new ChromeDriver(options);
+       // driver = new ChromeDriver(options);
         driver.get("https://www.google.com");
         System.out.println(driver.getTitle());
         Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Google"));
