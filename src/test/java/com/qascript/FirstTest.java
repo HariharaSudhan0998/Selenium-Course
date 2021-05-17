@@ -20,7 +20,7 @@ options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","-
         driver.get("http://flogile.com");
         //driver.get("https://www.google.com");
         System.out.println(driver.getTitle());
-        Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Google"));
+        Assert.assertTrue("Page title is not correct",driver.getTitle().equals("Flogile Technologies"));
     }
 
 
