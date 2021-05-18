@@ -6,6 +6,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+
+
+
+
+public class FirstTest {
+
+
+    
+    public static void main(String[] args) {
+    	
+    	
+    	System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+        WebDriver driver =new FirefoxDriver();   
+        driver.get("http:flogile.com");
+        //driver.get("http://seleniumhq.org/");	 
+   }
+
+}
 /*public class FirstTest {
 
 
@@ -26,17 +44,3 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 }*/
 
-public class FirstTest {
-
-
-    
-    public static void main(String[] args) {
-    	
-    	
-    	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-        WebDriver driver =new ChromeDriver();   
-        driver.get("http:flogile.com");
-        //driver.get("http://seleniumhq.org/");	 
-   }
-
-}
